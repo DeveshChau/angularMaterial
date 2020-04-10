@@ -15,3 +15,7 @@
 <button mat-icon-button [matMenuTriggerFor]="appMenu">
   <mat-icon>more_vert</mat-icon>
 </button>
+<h1>{{'home.title' | translate}}</h1>
+<select #langSelect (change)="translate.use(langSelect.value)">
+  <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
+</select>
