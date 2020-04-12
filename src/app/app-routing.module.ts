@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { InternationalizationComponent } from './internationalization/internationalization.component';
-import { MatButtonsComponent } from './mat-buttons/mat-buttons.component';
-import { TypographyComponent } from './typography/typography.component';
 
+import { InternationalizationComponent } from './internationalization/internationalization.component';
+import { TypographyComponent } from './typography/typography.component';
+import { ButtonsAndIndicatorsComponent } from './buttons-and-indicators/buttons-and-indicators.component';
 
 const routes: Routes = [
   { path: 'i18n', component: InternationalizationComponent },
-  { path: 'matButtons', component: MatButtonsComponent },
   { path: 'typography', component: TypographyComponent },
+  { path: 'buttonsAndIndicators', component: ButtonsAndIndicatorsComponent },
 ];
 
 @NgModule({

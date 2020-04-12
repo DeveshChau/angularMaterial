@@ -1,24 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { MaterialModule } from './material/material.module';
+
+import { AppComponent } from './app.component';
 import { InternationalizationComponent } from './internationalization/internationalization.component';
-import { MatButtonsComponent } from './mat-buttons/mat-buttons.component';
 import { TypographyComponent } from './typography/typography.component';
-export  function HttpLoaderFactory(http: HttpClient) {
+import { ButtonsAndIndicatorsComponent } from './buttons-and-indicators/buttons-and-indicators.component';
+
+import { ButtonsAndIndicatorsModule } from './buttons-and-indicators/buttons-and-indicators.module';
+import { MaterialModule } from './material/material.module';
+import { AppRoutingModule } from './app-routing.module';
+
+export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
+
 @NgModule({
   declarations: [
     AppComponent,
     InternationalizationComponent,
-    MatButtonsComponent,
-    TypographyComponent
+    TypographyComponent,
+    ButtonsAndIndicatorsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +36,10 @@ export  function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ButtonsAndIndicatorsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

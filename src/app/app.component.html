@@ -1,6 +1,6 @@
-<a routerLink="/i18n" routerLinkActive="active">Internationalization</a>
-<a routerLink="/matButtons" routerLinkActive="active">MatButtons</a>
-<a routerLink="/typography" routerLinkActive="active">Typography</a>
+<a routerLink="i18n" routerLinkActive="active">Internationalization</a>
+<a routerLink="typography" routerLinkActive="active">Typography</a>
+<a routerLink="buttonsAndIndicators" routerLinkActive="active">ButttonsAndIndicators</a>
 <select #langSelect (change)="translate.use(langSelect.value)">
   <option *ngFor="let lang of languages" [value]="lang.value">{{lang.label}}</option>
 </select>
