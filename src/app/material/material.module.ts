@@ -9,7 +9,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule } from '@angular/forms';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -22,7 +25,12 @@ import { FormsModule } from '@angular/forms';
     MatProgressBarModule,
     MatCardModule,
     MatRadioModule,
-    MatSliderModule
+    MatSliderModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule
+
   ],
   exports: [
     FormsModule,
@@ -34,7 +42,11 @@ import { FormsModule } from '@angular/forms';
     MatProgressBarModule,
     MatCardModule,
     MatRadioModule,
-    MatSliderModule
+    MatSliderModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule
   ]
 })
 export class MaterialModule { }

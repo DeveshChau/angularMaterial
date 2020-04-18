@@ -1,7 +1,13 @@
-<a routerLink="i18n" routerLinkActive="active">Internationalization</a>
-<a routerLink="typography" routerLinkActive="active">Typography</a>
-<a routerLink="buttonsAndIndicators" routerLinkActive="active">ButttonsAndIndicators</a>
-<select #langSelect (change)="translate.use(langSelect.value)">
-  <option *ngFor="let lang of languages" [value]="lang.value">{{lang.label}}</option>
-</select>
+<mat-toolbar color='primary'>
+  <mat-toolbar-row>
+    Material Component
+    <span class="spacer"></span>
+    <a mat-button routerLink="i18n" routerLinkActive="active">i18n</a>
+    <a mat-button routerLink="typography" routerLinkActive="active">Typography</a>
+    <a mat-button routerLink="buttonsAndIndicators" routerLinkActive="active">Butttons</a>
+    <select #langSelect (change)="translate.use(langSelect.value)">
+      <option *ngFor="let lang of languages" [value]="lang.value">{{lang.label}}</option>
+    </select>
+  </mat-toolbar-row>
+</mat-toolbar>
 <router-outlet></router-outlet>

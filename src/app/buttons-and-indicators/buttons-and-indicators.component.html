@@ -1,6 +1,15 @@
-<p>buttons-and-indicators works!</p>
-<a routerLink='mat-buttons'>Mat Buttons</a>
-<a routerLink='mat-buttons-toggle'>Mat Buttons Toggle</a>
-<a routerLink='mat-buttons-badge'>Mat Buttons Badge</a>
-<a routerLink='mat-progress-bar'>Mat Progess Bar</a>
-<router-outlet></router-outlet>
+<mat-grid-list cols="4" rowHeight="100%">
+    <mat-grid-tile colspan="1">
+        <mat-card>
+            <mat-list>
+                <mat-list-item><a mat-button  routerLink='mat-buttons'>Mat Buttons</a></mat-list-item>
+                <mat-list-item><a mat-button  routerLink='mat-buttons-toggle'>Mat Buttons Toggle</a></mat-list-item>
+                <mat-list-item><a mat-button  routerLink='mat-buttons-badge'>Mat Buttons Badge</a></mat-list-item>
+                <mat-list-item><a mat-button  routerLink='mat-progress-bar'>Mat Progess Bar</a></mat-list-item>
+            </mat-list>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3">
+        <router-outlet></router-outlet>
+    </mat-grid-tile>
+</mat-grid-list>
