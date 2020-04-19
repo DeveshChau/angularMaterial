@@ -14,6 +14,8 @@ import { ButtonsAndIndicatorsComponent } from './buttons-and-indicators/buttons-
 import { ButtonsAndIndicatorsModule } from './buttons-and-indicators/buttons-and-indicators.module';
 import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
+import { StepperComponent } from './layout/stepper/stepper.component';
+import { TreeComponent } from './layout/tree/tree.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -24,7 +26,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     InternationalizationComponent,
     TypographyComponent,
-    ButtonsAndIndicatorsComponent
+    ButtonsAndIndicatorsComponent,
+    StepperComponent,
+    TreeComponent
   ],
   imports: [
     BrowserModule,

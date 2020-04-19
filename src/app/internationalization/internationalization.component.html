@@ -1,2 +1,5 @@
 <p>internationalization works!</p>
+<select #langSelect (change)="translate.use(langSelect.value)">
+    <option *ngFor="let lang of languages" [value]="lang.value">{{lang.label}}</option>
+</select>
 <h1>{{'home.title' | translate}}</h1>

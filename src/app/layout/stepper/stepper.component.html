@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-horizontal-stepper labelPosition="bottom" linear>
+        <mat-step label="step 1" completed="true">
+            Content 1
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </mat-step>
+        <mat-step label="Step 2" completed="false" optional editable="false">
+            content 2
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </mat-step>
+        <mat-step label="step 3">
+            Content 3
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Submit</button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</mat-card>

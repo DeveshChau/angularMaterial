@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatStepperModule } from '@angular/material/stepper';
 
 const material = [
   FormsModule,
@@ -28,7 +29,8 @@ const material = [
   MatToolbarModule,
   MatSidenavModule,
   MatListModule,
-  MatGridListModule
+  MatGridListModule,
+  MatStepperModule
 ]
 @NgModule({
   imports: [material],
