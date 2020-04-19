@@ -14,39 +14,24 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 
+const material = [
+  FormsModule,
+  MatButtonModule,
+  MatMenuModule,
+  MatIconModule,
+  MatButtonToggleModule,
+  MatBadgeModule,
+  MatProgressBarModule,
+  MatCardModule,
+  MatRadioModule,
+  MatSliderModule,
+  MatToolbarModule,
+  MatSidenavModule,
+  MatListModule,
+  MatGridListModule
+]
 @NgModule({
-  imports: [
-    FormsModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonToggleModule,
-    MatBadgeModule,
-    MatProgressBarModule,
-    MatCardModule,
-    MatRadioModule,
-    MatSliderModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatGridListModule
-
-  ],
-  exports: [
-    FormsModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonToggleModule,
-    MatBadgeModule,
-    MatProgressBarModule,
-    MatCardModule,
-    MatRadioModule,
-    MatSliderModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatGridListModule
-  ]
+  imports: [material],
+  exports: [material]
 })
 export class MaterialModule { }
