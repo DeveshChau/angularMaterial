@@ -16,6 +16,8 @@ import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { StepperComponent } from './layout/stepper/stepper.component';
 import { TreeComponent } from './layout/tree/tree.component';
+import { AutocompleteComponent } from './formLayout/autocomplete/autocomplete.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,7 +30,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     TypographyComponent,
     ButtonsAndIndicatorsComponent,
     StepperComponent,
-    TreeComponent
+    TreeComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MaterialModule,
     ButtonsAndIndicatorsModule,
     AppRoutingModule

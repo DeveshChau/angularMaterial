@@ -13,6 +13,14 @@
       <a mat-menu-item routerLink="stepper">Stepper</a>
       <a mat-menu-item routerLink="tree">Tree</a>
     </mat-menu>
+    <a mat-button [matMenuTriggerFor]="formControl" routerLinkActive="active">
+      Form Control
+      <mat-icon aria-hidden="false" aria-label="Example drop down icon">arrow_drop_down</mat-icon>
+    </a>
+    <mat-menu #formControl="matMenu">
+      <a mat-menu-item routerLink="autocomplete">Autocomplete</a>
+      <a mat-menu-item routerLink="tree">Tree</a>
+    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
